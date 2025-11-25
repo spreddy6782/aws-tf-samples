@@ -1,0 +1,43 @@
+# Terraform local state
+*.tfstate
+*.tfstate.*
+
+# Crash logs and plan output
+crash.log
+terraform.plan
+
+# Sensitive variable files (do NOT commit secrets)
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+
+# Local .terraform directory (contains downloaded plugins/providers & modules)
+.terraform/
+
+# Ignore plugin cache (optional)
+.terraform/plugins/
+.terraform/providers/
+
+# Ignore override files that are only for local testing
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore local backend config files that may contain secrets
+/terraform.tfvars
+
+# Ignore TF log output (if you enable TF_LOG)
+.terraform.tfstate.d/
+*.log
+
+# Optional: keep the lock file (recommended to commit it)
+# .terraform.lock.hcl   <-- DO NOT IGNORE (commit this)
+
+# OS / Editor specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+.terraform.lock.hcl
